@@ -7,7 +7,7 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
+    --bg-color: #000000;
     --primary-color: #8186b0;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
@@ -76,3 +76,34 @@ nav {
   
   }
   
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #000000;
+  }
+
+  section h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    stroke-width: 50%;
+    font-family: monospace;
+    font-size: 8em;
+    margin: 0;
+    padding: 50px 0;
+    text-transform: uppercase;
+  }
+
+  canvas {
+    width: 100%;
+  }

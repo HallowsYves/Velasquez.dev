@@ -325,7 +325,7 @@
         let val = Math.abs(2*value);
         context.arc(0,0,val, 0, Math.PI*2, true);
         value = Math.min(Math.abs(value),1);
-        context.fillStyle= `hsl(311, 100%, ${Math.floor(100*value)}%)`;
+        context.fillStyle= `hsl(211, 100%, ${Math.floor(30*value)}%)`;
         context.fill();
         context.restore();
       }

@@ -51,10 +51,10 @@
     <nav>
         <h1>YVES VELASQUEZ</h1>
         <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#about" class="nav-link">ABOUT</a></li>
+          <li><a href="#skills" class="nav-link">SKILLS</a></li>
+          <li><a href="#projects" class="nav-link">PROJECTS</a></li>
+          <li><a href="#contact" class="nav-link">CONTACT</a></li>
         </ul>
         <button class="burger-menu" id="burger-menu">
           <ion-icon class="bars" name="menu-outline"></ion-icon>
@@ -62,9 +62,24 @@
   </nav>
 
     <!-- Hero Section -->
+    <section>
     <canvas id="canvas"></canvas>
-    <script src="perlin.js"></script>
+    <h1>HELLO!</h1>
 
+    <script src="perlin.js"></script>
+    </section>
+    <section>
+        <h1>ABOUT ME</h1>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            let scroll = $(window).scrollTop();
+            $('canvas').css({
+                filter: "blur(" + (scroll / 100) + "px)"
+            })
+        })
+    </script>
 
 
     <!-- More about -->
