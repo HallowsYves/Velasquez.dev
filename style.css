@@ -8,7 +8,7 @@
     --bold-font: 700;
     --bolder-font: 900;
     --bg-color: #fcfcfc;
-    --primary-color: #4756df;
+    --primary-color: #8186b0;
     --secondary-color: #ff7235;
     --primary-shadow: #8b8eaf;
     --secondary-shadow: #a17a69;
@@ -30,9 +30,9 @@ nav {
     background-color: var(--bg-color);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   }
-  
-  nav h1 {
-    color: var (--primary-color);
+
+  h1 {
+    color: var(--primary-color);
   }
 
   nav a {
@@ -61,5 +61,18 @@ nav {
     background-color: transparent;
     cursor: pointer;
     display: none;
+  }
+  
+
+  *{
+    padding:0;
+    margin:0;
+    boz-sizing:border-box;
+  }
+  
+  #canvas{
+    background:#021636;
+  
+  
   }
   
