@@ -3,3 +3,25 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
 }
+.transparent-header {
+  background-color: #3634575a; /* Change as per your color needs with appropriate opacity */
+  width: 100%;
+  position: fixed; /* To make it stay at the top when scrolling */
+  top: 0;
+  left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around; /* This will space out your nav items evenly */
+  align-items: center;
+  padding: 10px 0; /* Adjust as needed */
+}
+
+nav a {
+  color: #ffffff; /* Adjust the color as needed */
+  text-decoration: none;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: bold;
+  font-size: 16px; /* Adjust the font size as needed */
+}
