@@ -11,6 +11,22 @@ body {
   left: 0;
 }
 
+.centered-container {
+  display: flex;
+  justify-content: left; /* Centers horizontally */
+  padding-left: 20px;
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Takes up the full viewport height */
+  text-align: center; /* Ensures text is centered if it wraps onto multiple lines */
+}
+
+.centered-name {
+  font-size: 48px; /* Large text size for the name */
+  color: white;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: bold;
+}
+
 nav {
   display: flex;
   justify-content: space-around; /* This will space out your nav items evenly */
@@ -23,5 +39,5 @@ nav a {
   text-decoration: none;
   font-family: 'Istok Web', sans-serif;
   font-weight: bold;
-  font-size: 16px; /* Adjust the font size as needed */
+  font-size: 20px; /* Adjust the font size as needed */
 }
