@@ -1,8 +1,46 @@
 body {
-  background-image: url('Media/EZZEDesignImage.png');
+   /* background-image: url('Media/EZZEDesignImage.png'); */
   background-size: auto;
   background-repeat: no-repeat;
+  background-color: #413D37;
 }
+
+
+
+
+h2 {
+  font-size: 48px; /* Large text size for the name */
+  color: white;
+  font-family: 'Istok Web', sans-serif;
+  font-weight: bold;
+}
+
+p {
+  align-items: center;
+  font-size: 48px; /* Large text size for the name */
+  color: white;
+  font-family: 'Istok Web', sans-serif;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Ensure canvas is behind the name */
+}
+
+
+section {
+  padding: 20px;
+  background-color: #5E574D; /* Adjust background color if needed */
+  margin-top: 60px; /* Adjust this to account for the fixed header */
+  color: white;
+  margin: 60px auto; /* xCenter the section horizontally */
+  border-radius: 8px; /* Optional: add some rounded corners */
+}
+
 .transparent-header {
   background-color: #3634575a; /* Change as per your color needs with appropriate opacity */
   width: 100%;
@@ -12,19 +50,22 @@ body {
 }
 
 .centered-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: left; /* Centers horizontally */
+  align-items: center;
+  justify-content: flex-start;
   padding-left: 20px;
-  align-items: center; /* Centers vertically */
-  height: 100vh; /* Takes up the full viewport height */
-  text-align: center; /* Ensures text is centered if it wraps onto multiple lines */
 }
+
 
 .centered-name {
   font-size: 48px; /* Large text size for the name */
   color: white;
   font-family: 'Istok Web', sans-serif;
   font-weight: bold;
+  z-index: 1;
 }
 
 nav {
